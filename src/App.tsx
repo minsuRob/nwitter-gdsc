@@ -1,4 +1,4 @@
-import { RouterProvider, createHashRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./components/layout";
 import Home from "./routes/home";
 import Profile from "./routes/profile";
@@ -11,7 +11,7 @@ import LoadingScreen from "./components/loading-screen";
 import { auth } from "./firebase";
 import ProtectedRoute from "./components/protected-route";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: (
